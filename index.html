@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Coin</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  </head>
+  <body class="bodyConvertCoin flex flex-col min-h-screen bg-gray-100 font-poppins">
+    <header class="headerConvertCoin bg-[#5aba8d] text-white py-4 shadow-md">
+      <h1 class="convertCoin-title text-center text-2xl font-bold">🪙 Convert Coin</h1>
+    </header>
+
+    <main class="mainConvertCoin flex flex-col items-center justify-start flex-1 px-6 py-12 text-center space-y-6">
+        <img src="./assets/img/ilustration_undraw_savings_uwjn.png" alt="Ilustração de personagem inserindo uma moeda em um cofrinho em formato de porco." class="convertCoin-image w-48 h-48 object-contain mb-4"/>
+      
+        <form id="form" class="formConvertCoin flex flex-col gap-4 w-full max-w-md bg-white p-6 rounded-xl shadow-md">
+        <div class="formConvertCoin-element flex flex-col w-full">
+          <label for="value" class="mb-1 text-left text-sm font-medium">Valor</label>
+          <input type="number" id="value"  placeholder="Digite um valor" class="px-3 py-2 rounded-lg border border-gray-300 text-[#333] bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#5aba8d]"/>
+        </div>
+        
+        <div class="formConvertCoin-element flex flex-col w-full">
+          <label for="fromCurrency" class="mb-1 text-left text-sm font-medium">De</label>
+          <select id="fromCurrency" class="px-3 py-2 rounded-lg border border-gray-300 text-[#333] bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#5aba8d]">
+            <option value="" disabled selected>Selecione a moeda de origem</option>
+          </select>
+        </div>
+        <div class="formConvertCoin-element flex flex-col w-full">
+          <label for="toCurrency" class="mb-1 text-left text-sm font-medium">Para</label>
+          <select id="toCurrency" class="px-3 py-2 rounded-lg border border-gray-300 text-[#333] bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#5aba8d]">
+            <option value="" disabled selected>Selecione a moeda de destino</option>
+          </select>
+        </div>
+
+        <button type="submit" class="formConvertCoin-button w-full py-3 rounded-xl font-bold text-white bg-[#5aba8d] hover:bg-[#588157] transition">
+          Converter
+        </button>
+      </form>
+
+      <div id="feedback" class="convertCoin-feedback hidden w-full max-w-md text-center text-sm rounded"></div>
+
+      <div id="result" class="convertCoin-result w-full max-w-md text-center text-xl font-bold mt-2 text-[#588157]"></div>
+
+      <div class="convertCoin-history w-full max-w-md mt-4 flex flex-col items-center">
+        <h2 class="convertCoin-history-title text-lg font-semibold mb-2">Histórico de conversões:</h2>
+        <ul id="history" class="convertCoin-history-list space-y-2 w-full"></ul>
+      </div>
+    </main>
+
+    <footer class="footerConvertCoin bg-[#5aba8d] text-white py-3 text-center text-sm">
+      <span>&copy; Convert Coin, 2025. Todos os direitos reservados.</span>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

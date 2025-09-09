@@ -1,6 +1,6 @@
 # 🪙 Convert Coin
 
-Um website desenvolvido para realizar conversões de moedas em tempo real de forma prática e intuitiva. O projeto foi criado com fins de estudo e demonstração profissional, servindo como um repositório prático para aplicar conceitos de **HTML, JavaScript e Tailwind CSS**, ao mesmo tempo em que integra dados de uma API externa para conversão de moedas.
+Um website desenvolvido para realizar conversões de moedas em tempo real de forma prática e intuitiva. O projeto foi criado aplicando conceitos de **HTML, JavaScript, Tailwind CSS** e integrado a uma API externa para a conversão de moedas.
 
 ## 📖 Objetivo do Projeto
 
@@ -23,8 +23,8 @@ Um website desenvolvido para realizar conversões de moedas em tempo real de for
 - 💰 Conversão de valores entre diferentes tipos de moedas em tempo real.
 - 🌐 Integração com API externa para obter taxas de câmbio atualizadas.
 - 📝 Histórico das últimas 5 conversões realizadas.
-- 🔍 Validação de entradas do usuário (valor numérico, seleção de moedas).
-- 🟢 Feedback visual para sucesso, erro ou carregamento.
+- 🔍 Validação de entradas do usuário (valor, seleção de moedas).
+- 🟢 Feedback visual para sucesso, erro e carregamento.
 
 ## 📈 Possíveis melhorias futuras
 

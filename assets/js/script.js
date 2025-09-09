@@ -88,7 +88,7 @@ async function convertCurrency(amount, from, to) {
 
 // Formata valores com separador de milhar e 2 casas decimais
 function formatCurrency(amount, code) {
-  return `${Number(amount).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ${code}`;
+  return `${Number(amount).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ${code}`;
 }
 
 // Renderiza histórico no HTML
@@ -116,7 +116,10 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   hideFeedback(); // Limpa feedback anterior
 
-  const amount = parseFloat(inputValue.value);
+  let rawValue = inputValue.value;
+  rawValue = rawValue.replace(/\./g, '').replace(',', '.');
+  
+  const amount = parseFloat(rawValue);
   const from = fromCurrency.value;
   const to = toCurrency.value;
 

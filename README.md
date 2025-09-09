@@ -28,9 +28,7 @@ Um website desenvolvido para realizar conversões de moedas em tempo real de for
 
 ## 📈 Possíveis melhorias futuras
 
-- 🔄 Armazenamento do histórico no **localStorage** para persistência entre sessões.
 - 🌙 Implementação de tema claro e escuro.
-- 💹 Suporte a criptomoedas e mais moedas internacionais.
 - 🔎 Filtro ou pesquisa pela moeda no select.
 
 ## 👩‍💻 Autora
